@@ -1,0 +1,45 @@
+<!-- ===================== index.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GitHub Gallery</title>
+  <!-- Title shown in browser tab -->
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Main heading with GitHub icon -->
+  <h1>
+    <i class="fab fa-github"></i> GitHub Gallery
+  </h1>
+
+  <!-- Search section -->
+  <div class="search-container">
+    <!-- Input where user types GitHub username -->
+    <input 
+      type="text" 
+      id="username" 
+      placeholder="Enter GitHub username"
+    >
+
+    <!-- Button that runs loadRepos() when clicked -->
+    <button onclick="loadRepos()">Search</button>
+  </div>
+
+  <!-- Container where repo cards will appear -->
+  <div id="gallery" class="gallery"></div>
+
+  <!-- Displays error messages (like no repos found) -->
+  <p id="error" class="error"></p>
+
+  <!-- Link to external JavaScript file -->
+  <!-- 'defer' ensures HTML loads before JS runs -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
